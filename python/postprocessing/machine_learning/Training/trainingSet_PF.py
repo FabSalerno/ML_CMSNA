@@ -502,7 +502,6 @@ def main(year=year, component=component, inFile_to_open=inFile_to_open, nev=nev,
                 data_group.create_dataset('PFC', data=data[2],compression="gzip")       # PFCs
                 data_group.create_dataset('top', data=data[3],compression="gzip")      # Mass
                 data_group.create_dataset('labels', data=data[4],compression="gzip")    # Labels
-                data_group.create_dataset('labels_regressio', data=data[5],compression="gzip")    # mass and pt for regression problem
 
 
 
