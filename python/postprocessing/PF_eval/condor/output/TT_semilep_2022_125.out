@@ -1,0 +1,21 @@
+/eos/user/f/fsalerno/framework/MachineLearning/models/model_60_CNN_2D_0_pt.h5
+model_60_CNN_2D_0_pt.h5 <keras.engine.functional.Functional object at 0x14abb56224f0>
+/eos/user/f/fsalerno/framework/MachineLearning/models/model_60_CNN_2D_LSTM_0_pt.h5
+model_60_CNN_2D_LSTM_0_pt.h5 <keras.engine.functional.Functional object at 0x14abb4e55e80>
+/eos/user/f/fsalerno/framework/MachineLearning/models/model_60_CNN_2D_2_0_pt.h5
+model_60_CNN_2D_2_0_pt.h5 <keras.engine.functional.Functional object at 0x14aba406b730>
+/eos/user/f/fsalerno/framework/MachineLearning/models/model_60_CNN_2D_LSTM_2_0_pt.h5
+model_60_CNN_2D_LSTM_2_0_pt.h5 <keras.engine.functional.Functional object at 0x14aba406b1c0>
+/eos/user/f/fsalerno/framework/MachineLearning/models/model_TROTA.h5
+model_TROTA.h5 <keras.engine.functional.Functional object at 0x14abe2077c70>
+Because you requested a FJR we assume you want the final hadd. No name specified for the output file, will use tree.root
+Will write selected trees to /eos/user/f/fsalerno/Data/PF/topevaluate/to_hadd
+Pre-select 47260 entries out of 47260 (100.00%)
+Processed    10000/   47260 entries, 21.16% (elapsed time  2086.8s, curr speed    0.005 kHz, avg speed    0.005 kHz), accepted     1049/   10001 events (10.49%)
+Processed    20000/   47260 entries, 42.32% (elapsed time  4074.0s, curr speed    0.005 kHz, avg speed    0.005 kHz), accepted     2090/   20001 events (10.45%)
+Processed    30000/   47260 entries, 63.48% (elapsed time  5622.1s, curr speed    0.006 kHz, avg speed    0.005 kHz), accepted     3212/   30001 events (10.71%)
+Processed    40000/   47260 entries, 84.64% (elapsed time  7437.9s, curr speed    0.006 kHz, avg speed    0.005 kHz), accepted     4303/   40001 events (10.76%)
+Processed 47260 preselected entries from root://cms-xrd-global.cern.ch///store/user/fsalerno/PFNano/TTtoLNu2Q_TuneCP5_13p6TeV_powheg-pythia8/TT_semilep_2022/250314_154005/0000/PFnano_mcRun3_TT_inclusive_1000_449.root (47260 entries). Finally selected 5042 entries
+Done /eos/user/f/fsalerno/Data/PF/topevaluate/to_hadd/PFnano_mcRun3_TT_inclusive_1000_449.root
+Total time 8719.6 sec. to process 47260 events. Rate = 5.4 Hz.
+DONE

@@ -1,0 +1,50 @@
+000 (8240254.000.000) 03/04 12:33:15 Job submitted from host: <137.138.55.115:9618?addrs=137.138.55.115-9618+[2001-1458-d00-17--12a]-9618&alias=bigbird23.cern.ch&noUDP&sock=schedd_1381843_f090>
+...
+040 (8240254.000.000) 03/04 15:42:45 Started transferring input files
+	Transferring to host: <188.185.196.187:9618?addrs=188.185.196.187-9618+[2001-1458-303-23--100-b7]-9618&alias=b9p16p4396.cern.ch&noUDP&sock=slot1_24_2835570_5525_12705>
+...
+040 (8240254.000.000) 03/04 15:42:45 Finished transferring input files
+...
+001 (8240254.000.000) 03/04 15:42:46 Job executing on host: <188.185.196.187:9618?addrs=188.185.196.187-9618+[2001-1458-303-23--100-b7]-9618&alias=b9p16p4396.cern.ch&noUDP&sock=startd_8266_5def>
+	SlotName: slot1_24@b9p16p4396.cern.ch
+	CondorScratchDir = "/pool/condor/dir_286286"
+	Cpus = 1
+	Disk = 3849
+	GPUs = 0
+	Memory = 3000
+...
+006 (8240254.000.000) 03/04 15:43:00 Image size of job updated: 51100
+	50  -  MemoryUsage of job (MB)
+	51100  -  ResidentSetSize of job (KB)
+...
+006 (8240254.000.000) 03/04 15:43:58 Image size of job updated: 364092
+	50  -  MemoryUsage of job (MB)
+	51100  -  ResidentSetSize of job (KB)
+...
+040 (8240254.000.000) 03/04 15:43:58 Started transferring output files
+...
+040 (8240254.000.000) 03/04 15:43:58 Finished transferring output files
+...
+005 (8240254.000.000) 03/04 15:43:58 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:15, Sys 0 00:00:05  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:15, Sys 0 00:00:05  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	9292  -  Run Bytes Sent By Job
+	10999  -  Run Bytes Received By Job
+	9292  -  Total Bytes Sent By Job
+	10999  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.09        1         1 
+	   Disk (KB)            :    44          12      3849 
+	   GPUs                 :                           0 
+	   Memory (MB)          :    50        3000      3000 
+
+	Job terminated of its own accord at 2025-03-04T14:43:58Z with exit-code 1.
+...
+000 (8244154.000.000) 03/04 18:52:50 Job submitted from host: <137.138.55.115:9618?addrs=137.138.55.115-9618+[2001-1458-d00-17--12a]-9618&alias=bigbird23.cern.ch&noUDP&sock=schedd_1381843_f090>
+...
+009 (8244154.000.000) 03/04 18:55:04 Job was aborted.
+	via condor_rm (by user fsalerno)
+...

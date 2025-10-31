@@ -1,0 +1,18 @@
+/eos/user/f/fsalerno/framework/MachineLearning/models/model_60_CNN_2D_0_pt.h5
+model_60_CNN_2D_0_pt.h5 <keras.engine.functional.Functional object at 0x1543838cd4f0>
+/eos/user/f/fsalerno/framework/MachineLearning/models/model_60_CNN_2D_LSTM_0_pt.h5
+model_60_CNN_2D_LSTM_0_pt.h5 <keras.engine.functional.Functional object at 0x154382e1b3a0>
+/eos/user/f/fsalerno/framework/MachineLearning/models/model_60_CNN_2D_2_0_pt.h5
+model_60_CNN_2D_2_0_pt.h5 <keras.engine.functional.Functional object at 0x1543501120d0>
+/eos/user/f/fsalerno/framework/MachineLearning/models/model_60_CNN_2D_LSTM_2_0_pt.h5
+model_60_CNN_2D_LSTM_2_0_pt.h5 <keras.engine.functional.Functional object at 0x1541b1f3e580>
+/eos/user/f/fsalerno/framework/MachineLearning/models/model_TROTA.h5
+model_TROTA.h5 <keras.engine.functional.Functional object at 0x1543581a41c0>
+Because you requested a FJR we assume you want the final hadd. No name specified for the output file, will use tree.root
+Will write selected trees to /eos/user/f/fsalerno/Data/PF/topevaluate/to_hadd
+Pre-select 18765 entries out of 18765 (100.00%)
+Processed    10000/   18765 entries, 53.29% (elapsed time  2848.2s, curr speed    0.004 kHz, avg speed    0.004 kHz), accepted     1066/   10001 events (10.66%)
+Processed 18765 preselected entries from root://cms-xrd-global.cern.ch///store/user/fsalerno/PFNano/TTtoLNu2Q_TuneCP5_13p6TeV_powheg-pythia8/TT_semilep_2022/250314_154005/0002/PFnano_mcRun3_TT_inclusive_1000_2438.root (18765 entries). Finally selected 2017 entries
+Done /eos/user/f/fsalerno/Data/PF/topevaluate/to_hadd/PFnano_mcRun3_TT_inclusive_1000_2438.root
+Total time 4787.7 sec. to process 18765 events. Rate = 3.9 Hz.
+DONE

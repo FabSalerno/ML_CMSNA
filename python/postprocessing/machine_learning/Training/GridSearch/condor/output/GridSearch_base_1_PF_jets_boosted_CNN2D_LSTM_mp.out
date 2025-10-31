@@ -1,0 +1,7 @@
+SCRAM_ARCH is set to: el9_amd64_gcc11
+
+versione TF:
+ 2.6.4
+Current working directory: /afs/cern.ch/user/f/fsalerno/CMSSW_13_2_11/src/PhysicsTools/NanoAODTools/python/postprocessing/machine_learning/Training/GridSearch
+Path to h5 file: /eos/user/f/fsalerno/framework/MachineLearning/TrainingSet_PF_folder/Full/trainingSet_preprocessed_0_pt.h5
+Error: [Errno 2] Unable to synchronously open file (unable to open file: name = '/eos/user/f/fsalerno/framework/MachineLearning/Training_PF_2022_1_jets_60_boosted_0_pt/trainingSet.h5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
