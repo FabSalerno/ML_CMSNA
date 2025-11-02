@@ -159,12 +159,17 @@ def boost_PFC(pt_top,eta_top,phi_top,M_top,pt_PFC,eta_PFC,phi_PFC,M_PFC):
     return pt_new, eta_new, phi_new, mass_new
 
 
-def fill_PFCs(n_PFCs, PFCs_dnn, PFCs, idx_top, pt_top, eta_top, phi_top, M_top): 
+def fill_PFCs(n_PFCs, PFCs_dnn, PFCs, idx_top, pt_top, eta_top, phi_top, M_top, boost): 
     for i,particle in enumerate(PFCs):
         if i<n_PFCs: #minore e non minore e uguale perchè parte da 0
             #pt_boost, eta_boost, phi_boost, mass_boost = boost_PFC(pt_top, eta_top, phi_top, M_top, particle.pt ,particle.eta, particle.phi, particle.mass)
-            pt_boost, eta_boost, phi_boost, mass_boost = particle.pt ,particle.eta, particle.phi, particle.mass
-            PFCs_dnn[idx_top, i, 0] = pt_boost
+        if boost == True:
+                pt_boost, eta_boost, phi_boost, mass_boost = boost_PFC(pt_top, eta_top, phi_top, M_top, particle.pt ,particle.eta, particle.phi, particle.mass)
+            else:
+                pt_boost = particle.pt
+                eta_boost = particle.eta
+                phi_boost = particle.phi
+                mass_boost = particle.mass            PFCs_dnn[idx_top, i, 0] = pt_boost
             PFCs_dnn[idx_top, i, 1] = eta_boost
             PFCs_dnn[idx_top, i, 2] = phi_boost
             PFCs_dnn[idx_top, i, 3] = mass_boost
@@ -270,7 +275,8 @@ def process_batch(batch_indexes, inFile_to_open, component, categories, n_PFCs, 
                                                 pt_top=t.pt,
                                                 eta_top=t.eta,
                                                 phi_top=t.phi,
-                                                M_top=t.mass)        
+                                                M_top=t.mass, 
+                                                boost=boost)        
                         
                         if best_top_category == 0: #3j1fj
                             fj              = fatjets[t.idxFatJet]
@@ -442,6 +448,7 @@ thr                         = options.thr
 n_PFCs                      = options.n_PFCs
 pt_cut                      = options.pt_cut
 verbose                     = options.verbose
+boost                       = False
 def main(year=year, component=component, inFile_to_open=inFile_to_open, nev=nev, path_to_h5=path_to_h5, select_top_over_threshold=select_top_over_threshold, thr=thr, n_PFCs=n_PFCs, pt_cut=pt_cut, verbose=verbose):
     if verbose:
         print(f"year:                           {year}")

@@ -148,7 +148,7 @@ def boost_PFC(pt_top,eta_top,phi_top,M_top,pt_PFC,eta_PFC,phi_PFC,M_PFC):
 
     return pt_new, eta_new, phi_new, mass_new
 
-def fill_PFCs(n_PFCs, PFCs_dnn, PFCs, idx_top, pt_top, eta_top, phi_top, M_top): 
+def fill_PFCs(n_PFCs, PFCs_dnn, PFCs, idx_top, pt_top, eta_top, phi_top, M_top, boost): 
     for i,particle in enumerate(PFCs):
         if i<n_PFCs: #minore e non minore e uguale perchè parte da 0
             if boost == True:
@@ -300,7 +300,8 @@ class nanoTopevaluate_MultiScore(Module):
                                     pt_top=top.pt,
                                     eta_top=top.eta,
                                     phi_top=top.phi,
-                                    M_top=top.mass)
+                                    M_top=top.mass,
+                                    boost=boost)
             if top.idxJet2==-1:
                 j0, j1      = jets[top.idxJet0],jets[top.idxJet1]
                 fj          = fatjets[top.idxFatJet]
