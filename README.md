@@ -182,4 +182,7 @@ Gli script cut_flow permettono rispettivamente a loro volta di riempire e plotta
 
 Ci sono anche file di studi sul matching dei jet per verificare l'impatto del taglio dei jet con $p_T$ inferiore a 25 GeV 
 
+## GNN
+C'è una cartella con dei file di preprocessing trainingset che non salvano i Jets e Fatjets per GNN
+Per ulteriori info sulle GNN e i grafi vedere i tutorial
   
